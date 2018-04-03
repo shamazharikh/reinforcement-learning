@@ -42,3 +42,10 @@ class LearningGraph(object):
 		# self.ax2.legend(handles=self.ax2_lines, loc=4)
 		self.fig.savefig(savepath)
 		plt.close(self.fig)
+
+class EpisodeDisplay(object):
+	def __init__(self, name):
+		self.fig, self.ax = plt.subplots(figsize=(7,7))
+		self.fig.suptitle(name)
+	def update(self, image):
+		self.ax.
